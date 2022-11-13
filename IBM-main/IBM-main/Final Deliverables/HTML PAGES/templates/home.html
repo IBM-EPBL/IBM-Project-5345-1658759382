@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .topnav{
+    display:flex;
+    position:relative;
+    top:-100px;
+    z-index: 10;  
+    backdrop-filter: blur(15px) saturate(250%);   
+    -webkit-backdrop-filter: blur(0.1px) saturate(400%);   
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    background-color:rgba(0,0,0,0.3);  
+    color: white;
+    }
+
+.links{
+    margin-right: 1em;
+    margin-left: auto;
+    position:relative;
+}
+
+   body {
+    background-image: url("https://cdn.wallpapersafari.com/1/81/WTUO13.jpg");
+    height: 100%;
+    margin:0 auto;
+    /* Center and scale the image nicely */
+    background-size: cover; 
+   } 
+
+    a{
+       font-size: 2rem;
+       padding: 200px 10px;
+       text-decoration: none;
+       color: inherit; 
+       margin-right: 1rem;
+      
+      }
+    a:hover{
+        color: black;
+    }
+
+    h2{
+        position:relative;
+        font-size: 3rem;
+        left:30px;
+    }
+
+    #bing{
+        cursor: pointer;
+        z-index: 100;
+        color: rgb(255, 255, 255);
+    }
+
+    #text{
+        display:flex;
+        position:relative;
+        z-index: 10;
+        height: 380px;
+        width: 100px;
+        font-size: 25px;
+        margin-left: 400px;
+        margin-bottom:50px;
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-bottom: 100px;
+        width:710px;
+        position:relative;
+        background: rgb(3, 65, 16); /* Fallback for older browsers without RGBA-support */
+        background: rgba(3, 53, 23, 0.5);
+        border-radius: 20px;
+   }
+    
+    #tex{
+        color: white;
+        padding-top: 30px;
+        font-size: 30px;
+        text-align: justify;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Powered Nutrition Analyzer for Fitness Enthusiasts</title>
+</head>
+<body>
+    <h2 id="bing">Nutrition Image Analysis</h2>
+    <div class="topnav">
+        <div class="links">
+        <a href="{{url_for('home')}}" class="active">Home</a>
+        <a href="{{url_for('image1')}}">Classify</a>
+        </div>
+    </div>
+    
+    <div id="text">
+       <p id="tex">
+        Food is essential tor human life and has been the concerm of many
+        healthcare conventions. Nowadays new dietary assessment and
+        nutrition analysis tools enable more opportunities to help people
+        understand their daily eating habits, exploring nutrition patterns and
+        maintain a healthy diet. Nutritional analysis is the process of
+        determining the nutritional content of food. It is a vital part of
+        analytical chemistry that provides information about the chemical
+        composition, processing, quality control and contamination of food. It
+        ensures compliance with trade and food laws.
+       </p>
+    </div>
+    
+    
+</body>
+</html>
